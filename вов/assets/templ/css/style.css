@@ -1,0 +1,266 @@
+/*прелоадер----------------------------------------------------------------------*/
+    .loaderArea {
+        background: #ccc;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right:0;
+        bottom:0;
+        z-index: 100000;
+    }
+    .loader {
+        overflow: hidden;
+        height: 1000px;
+        width: 1000px;
+        position: absolute;
+        left: 50%;
+        margin-left: -64px;
+        top: 50%;
+        margin-top: -64px;
+    }
+    .loader:before,
+        .loader:after {
+          content: "";
+        }
+/*прелоадер конец----------------------------------------------------------------------*/
+.clear {
+    clear: both;
+    content: "";
+}
+body {
+    background-position: center;
+    overflow-x: hidden;
+    background: beige url(../img/fon.jpg);
+    background-attachment: fixed;
+}
+.wrap {
+    overflow-x: hidden;
+}
+a {
+    color: maroon;
+    text-decoration: underline;
+}
+a:hover {
+    color: red;
+}
+a:visited {
+    color: green;
+}
+a:active {
+    color: red;
+}
+h3, h4, h5, h6, h7 {
+    text-align: center;
+}
+h2 {
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    text-shadow: maroon 1px 0px, maroon 1px 1px, maroon 0px 1px, maroon -1px 1px, maroon -1px 0px, maroon -1px -1px, maroon 0px -1px, maroon 1px -1px, maroon 0 0 3px, maroon 0 0 3px, maroon 0 0 3px, maroon 0 0 3px, maroon 0 0 3px, maroon 0 0 3px, maroon 0 0 3px, maroon 0 0 3px;
+}
+.center {text-align: center;}
+.right {text-align: right;}
+.block {
+    background-color: rgba(255,255,220,0.7);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.hover-img {
+    
+    box-shadow: 0 0 10px rgba(0,0,0,0.0);
+}
+.hover-img:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.modal-content {
+    background-color: rgba(255,255,255,0.8);
+}
+footer .glyphicon {
+    color: white;
+    font-size: 28px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 30px;
+    margin-bottom: 2px;
+}
+/*Меню----------------------------------------------------------------------*/
+    nav {
+        background-color: rgba(0,0,0,0.7);
+        padding-right: 20px;
+        width: 300px;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 20;
+        color: white;
+        height: 100%;
+        display: none;
+    }
+    nav h2 {
+        text-align: center;
+        margin-right: -20px;
+        color: yellow;
+    }
+    nav a {
+        color: white;
+        display: block;
+        padding: 4px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav a:hover {
+        color: yellow;
+        text-decoration: none;
+    }
+    nav li {
+        list-style: none;
+    }
+    nav li:hover {
+        background-color: maroon;
+    }
+    .menu_icon {
+        z-index: 21;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+    .menu_icon img:hover {
+        opacity: 0.8;
+    }
+/*Меню конец----------------------------------------------------------------------*/
+/*Блок header*/
+    header {
+        background-color: rgba(255,255,220,0.7);
+        padding: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+        color: maroon;
+        margin-bottom: -16px;
+    }
+    header img {
+        width: 200px;
+    }
+    header h1 {
+        margin-top: -2px;
+        font-size: 16px;
+        color: white;
+        text-shadow: maroon 1px 0px, maroon 1px 1px, maroon 0px 1px, maroon -1px 1px, maroon -1px 0px, maroon -1px -1px, maroon 0px -1px, maroon 1px -1px, maroon 0 0 3px, maroon 0 0 3px, maroon 0 0 3px, maroon 0 0 3px, maroon 0 0 3px, maroon 0 0 3px, maroon 0 0 3px, maroon 0 0 3px;
+    }
+    header a {
+        color: maroon;
+    }
+    .lead {
+        font-size: 0.8em;
+    }
+/*Блок header конец*/
+/*-----------Увелич. картинки-----------*/ 
+    .kat_hoverbox .kat_preview { 
+        display: none;
+    } 
+    .kat_hoverbox:hover .kat_preview { 
+        display: block; 
+        position: absolute; 
+        top: -100px; 
+        left: -5px; 
+        z-index: 1;
+    }
+    .kat_hoverbox {            
+        color: inherit; 
+        display: inline; 
+        float: left;
+        margin: 1px; 
+        padding: 1px; 
+        position: relative;
+    } 
+    .kat_thumb {
+        width: 150px;
+        height: auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .kat_preview {
+        width: 400px;
+        height: auto;
+        background-color: white;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    @media screen and (max-width: 440px){
+        .kat_preview {
+            width: 280px;
+        }  
+    }
+/*-----------Увелич. картинки конец-----------*/
+/*------------Фотогалерея ----------------*/
+    .fotorama__nav-wrap {
+        bottom: 15px;
+        position: absolute;
+        padding: 0 30px;
+        width: 100%;
+    }
+    .fotorama__thumb {
+        border: 4px yellow solid;
+    }
+    .fotorama__thumb-border{
+        border-color: gold;
+    }
+    .fotorama__thumb:hover {
+        border-color: gold;
+        opacity: 0.8;
+    }
+/*-----------Фотогалерея конец-------------*/
+/* Карусель ----------------------------------------------------------------------*/
+
+    /*Точки*/
+    .owl-theme .owl-dots .owl-dot span {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(0,0,0,0.0);
+        border: 1px solid black;
+    }
+    .owl-theme .owl-dots .owl-dot.active span{
+        width: 12px;
+        height: 12px;
+        background-color: white;
+    }
+    /*Стрелки*/
+
+/* Карусель конец------------------------------------------------*/
+
+h3{
+  color: white ;
+    background-position: center;
+    
+}
+    /*разрешение--------*/
+    
+   @media screen and (min-width: 1440px) and (max-width: 1599px){     }
+@media screen and (min-width: 320px) and (max-width: 479px){     }
+@media screen and (min-width: 480px) and (max-width: 599px){     }
+@media screen and (min-width: 600px) and (max-width: 767px){     }
+@media screen and (min-width: 768px) and (max-width: 1023px){     }
+@media screen and (min-width: 1024px) and (max-width: 1279px){     }
+@media screen and (min-width: 1280px) and (max-width: 1599px){     }
+@media screen and (min-width: 1600px) and (max-width: 1919px){     }
+@media screen and (min-width: 1920px) and (max-width: 2047px){     }
+@media screen and (min-width: 2048px) and (max-width: 2559px){     }
+@media screen and (min-width: 2560px) and (max-width: 3839px){     }
+.section-gallery fotorama{
+   background-position: center;
+    
+    
+}
+
+    
+    
+    
+    
+    
+    
+    
